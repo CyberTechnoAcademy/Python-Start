@@ -1,0 +1,4 @@
+aiogram==2.25.1
+pyTelegramBotAPI==4.7.1
+kivy==2.0.0 
+pygame==2.4.0
