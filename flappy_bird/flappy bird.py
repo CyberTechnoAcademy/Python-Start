@@ -7,8 +7,8 @@ pygame.init()
 clock = pygame.time.Clock()
 fps = 70
 
-screen_width = 700
-screen_height = 600
+screen_width = 600
+screen_height = 500
 
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Flappy Bird')
@@ -55,6 +55,7 @@ class Bird(pygame.sprite.Sprite):
 		self.counter = 0
 		for num in range(1, 4):
 			img = pygame.image.load(f'flappy_bird/img/bird{num}.png')
+			img.get_size()
 			self.images.append(img)
 		self.image = self.images[self.index]
 		self.rect = self.image.get_rect()
